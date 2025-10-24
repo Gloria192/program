@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Student1.css">
+    <title>STUDENT FORM</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form id="content">
+        <label for="studentId"> id :</label>
+        <input type="text" id="studentId" name="studentId" required><br><br>
+        
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Gloria" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="MUTUYIMANA" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="mutuyegloria@gmail.com" required><br><br>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+250 78 000 0000"><br><br>
+        
+        <label for="province">Province:</label>
+        <input list="provinces" id="province" name="province" placeholder="Select or type a province" required>
+        <datalist id="provinces">
+            <option value="Kigali City">
+            <option value="Northern Province">
+            <option value="Southern Province">
+            <option value="Eastern Province">
+            <option value="Western Province">
+        </datalist>
+        <br><br>
+
+        <label for="district">District:</label>
+        <input list="districts" id="district" name="district" placeholder="Select district" required>
+        <datalist id="districts"></datalist>
+        <br><br>
+
+        <label for="sector">Sector:</label>
+        <input list="sectors" id="sector" name="sector" placeholder="Select sector" required>
+        <datalist id="sectors"></datalist>
+        <br><br>
+        
+        <label for="cell">Cell:</label>
+        <input list="cells" id="cell" name="cell" placeholder="Select cell" required>
+        <datalist id="cells"></datalist>
+        <br><br>
+
+        <label for="village">Village:</label>
+        <input list="villages" id="village" name="village" placeholder="Select village" required>
+        <datalist id="villages"></datalist>
+        <br><br>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="fatherName">Father Name:</label>
+        <input type="text" id="fatherName" name="fatherName"><br><br>
+        
+        <label for="motherName">Mother Name:</label>
+        <input type="text" id="motherName" name="motherName"><br><br>
+        
+        <label for="fatherPhone">Father Phone:</label>
+        <input type="tel" id="fatherPhone" name="fatherPhone"><br><br>
+        
+        <label for="motherPhone">Mother Phone:</label>
+        <input type="tel" id="motherPhone" name="motherPhone"><br><br>
+        
+        <label for="guardianName">Guardian Name:</label>
+        <input type="text" id="guardianName" name="guardianName"><br><br>
+        
+        <label for="guardianPhone">Guardian Phone:</label>
+        <input type="tel" id="guardianPhone" name="guardianPhone"><br><br>
+
+        <label for="guardianAddress">Guardian Address:</label>
+        <input type="text" id="guardianAddress" name="guardianAddress"><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="Student1.js"></script>
+</body>
+</html>
